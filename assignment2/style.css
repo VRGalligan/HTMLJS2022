@@ -4,7 +4,7 @@ html, body{
 }
 h1{
     margin: auto;
-    border: 25px;
+    border: 25px solid coral;
     padding: 30px;
     background-color: rebeccapurple;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
