@@ -1,6 +1,7 @@
 html, body{
     background-color: lightgreen;
     color: teal;
+    font-weight: bold;
 }
 h1{
     margin: auto;
@@ -10,6 +11,7 @@ h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     color: darksalmon;
+    font-stretch: semi-expanded;
 
 }
 p{
@@ -18,5 +20,5 @@ p{
     border: 6px dashed darkolivegreen;
     padding: 5px;
     font-family: 'Courier New', Courier, monospace;
-    font-style: normal;
+    font-style: italic;
 }
