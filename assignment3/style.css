@@ -1,0 +1,24 @@
+body{
+    background-color: darkkhaki ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: bisque;
+}
+h1{
+    width: 950px;
+    padding: 10px;
+    text-align: center;
+    background-color: cornflowerblue;
+    border: 15px dotted palevioletred;
+}
+
+
+.sections{
+    width: 950px;
+    padding: 10px;
+    background-color: forestgreen;
+    text-align: left;
+}
+img{
+    border: 36px dotted palegreen;
+}
