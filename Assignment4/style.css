@@ -9,7 +9,7 @@ body{
 
 #container{
     width: 1000px;
-    border: 1px solid black;
+    border: 1px double palevioletred;
 }
 
 header{
@@ -21,6 +21,7 @@ header{
 nav{
     width: 100%;
     height: 50px;
+    background-color: lightsalmon;
 }
 
 article{
@@ -62,11 +63,11 @@ footer{
     float: left;
     width: 135px;
     height: 50px;
-    background-color: gray;
+    background-color: lightpink;
     text-decoration: none;
     text-align: center;
     line-height: 50px;
-    color: white;
+    color: darkgray;
 }
 .btn:hover{
     background-color: darkgray;
