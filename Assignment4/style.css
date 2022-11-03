@@ -9,13 +9,13 @@ body{
 
 #container{
     width: 1000px;
-    border: 1px double palevioletred;
+    border: 1px single paleturquoise;
 }
 
 header{
     width: 100%;
     height: 100px;
-    background-color: lightcyan;
+    background-color: lightsalmon;
 }
 
 nav{
