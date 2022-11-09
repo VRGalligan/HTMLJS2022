@@ -19,7 +19,7 @@ ctx.stroke();
 
 
 //circle
-ctx.fillStyle = "#fff00";
+ctx.fillStyle = "#ffff00";
 ctx.strokeStyle = "red";
 ctx.lineWidth = "5";
 ctx.beginPath();
@@ -30,7 +30,7 @@ ctx.stroke();
 
 //pentagon
 ctx.fillStyle = "#ff00ff";
-ctx.strokeStyle = "#ff00ff";
+ctx.strokeStyle = "#00ffff";
 ctx.lineWidth = "5";
 ctx.beginPath();
 ctx.moveTo(557, 305);
