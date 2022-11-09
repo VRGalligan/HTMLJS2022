@@ -23,18 +23,21 @@ ctx.fillStyle = "#fff00";
 ctx.strokeStyle = "red, wide";
 ctx.lineWidth = "5";
 ctx.beginPath();
-ctx.arc(319,374,50,0, (2 *Math.PI), false);
+ctx.arc(385,441,65,0, (2 *Math.PI), false);
 ctx.closePath();
 ctx.fill();
 ctx.stroke();
 
 //pentagon
-ctx.beginPath()
-ctx.moveTo(557,305)
-ctx.moveTo(667,284)
-ctx.moveTo(724,379)
-ctx.moveTo(651,464)
-ctx.moveTo(548,420)
-ctx.closePath()
+ctx.fillStyle = "#ff00ff";
+ctx.strokeStyle = "#00ffff,wide";
+ctx.lineWidth = "5";
+ctx.beginPath();
+ctx.moveTo(557,305);
+ctx.moveTo(667,284);
+ctx.moveTo(724,379);
+ctx.moveTo(651,464);
+ctx.moveTo(548,420);
+ctx.closePath();
 
 
