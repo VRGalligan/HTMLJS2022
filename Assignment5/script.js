@@ -51,23 +51,23 @@ ctx.lineTo(279,549);
 ctx.stroke();
 
 //star
-ctx.fillStyle = "ffff00"
-ctx.strokeStyle = "rgb(32,32,32)"
-ctx.lineWidth = "5"
-ctx.beginPath()
-ctx.moveTo(635,496)
-ctx.lineTo(668,554)
-ctx.lineTo(733,566)
-ctx.lineTo(688,615)
-ctx.lineTo(696,681)
-ctx.lineTo(635,653)
-ctx.lineTo(575,681)
-ctx.lineTo(583,615)
-ctx.lineTo(538,567)
-ctx.lineTo(602,553)
-ctx.closePath()
-ctx.fill()
-ctx.stroke()
+ctx.fillStyle = "ffff00";
+ctx.strokeStyle = "rgb(32,32,32)";
+ctx.lineWidth = "5";
+ctx.beginPath();
+ctx.moveTo(635,496);
+ctx.lineTo(668,554);
+ctx.lineTo(733,566);
+ctx.lineTo(688,615);
+ctx.lineTo(696,681);
+ctx.lineTo(635,653);
+ctx.lineTo(575,681);
+ctx.lineTo(583,615);
+ctx.lineTo(538,567);
+ctx.lineTo(602,553);
+ctx.closePath();
+ctx.fill();
+ctx.stroke();
 
 
 
