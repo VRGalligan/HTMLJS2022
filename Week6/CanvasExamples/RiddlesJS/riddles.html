@@ -6,12 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riddles with Javascript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rubik+Bubbles&display=swap" rel="stylesheet">
     <style>
+        @font-face {
+            font-family: grinch;
+            src: url(fonts/grinched/GrinchedRegular.otf);
+           }
         body {
-            background-color: darkcyan;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: medium;
-            color: bisque;
+           
+           
+            background-color: darkred;
+            font-family: grinch;
+            font-size: larger;
+            color: lightgreen;
 
         }
     </style>
@@ -25,7 +34,8 @@
         <li> 
             <p>David's parents have three sons, snap and crackle. What's the name of their third son?</p>
             <br>
-            <p onclick="showAnswer('answer', 'David')" id="answer">Answer</p>
+            <button onclick="showAnswer('answer', 'David')">Click for Answer</button>
+            <span  id="answer"></span>
         </li>
         <li> 
             <p>What has many keys, but can't open any locks?</p>
