@@ -4,6 +4,8 @@ var ctx = canvas.getContext("2d");
 
 
 
+
+
 //square
 ctx.fillStyle = "yellow";
 ctx.strokeStyle = "black";
@@ -18,15 +20,6 @@ ctx.fill();
 ctx.stroke();
 
 
-//circle
-ctx.fillStyle = "#ffff00";
-ctx.strokeStyle = "red";
-ctx.lineWidth = "5";
-ctx.beginPath();
-ctx.arc(385,441,65,0, (2 *Math.PI), false);
-ctx.closePath();
-ctx.fill();
-ctx.stroke();
 
 //pentagon
 ctx.fillStyle = "#ff00ff";
@@ -41,6 +34,20 @@ ctx.moveTo(548, 420);
 ctx.closePath();
 ctx.fill();
 ctx.stroke();
+
+
+
+//circle
+ctx.fillStyle = "#ffff00";
+ctx.strokeStyle = "red";
+ctx.lineWidth = "5";
+ctx.beginPath();
+ctx.arc(385,441,65,0, (2 *Math.PI), false);
+ctx.closePath();
+ctx.fill();
+ctx.stroke();
+
+
 
 //line
 ctx.strokeStyle ="rgb(225,0,0)"
