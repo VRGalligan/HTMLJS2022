@@ -19,10 +19,15 @@ ctx.stroke();
 
 
 //circle
+ctx.fillStyle = "#fff00";
+ctx.strokeStyle = "red, wide";
+ctx.lineWidth = "5";
 ctx.beginPath();
 ctx.arc(385,440,50,0, (3*Math.PI)/2, false);
 ctx.lineTo(385,440);
 ctx.closePath();
 ctx.fill();
 ctx.stroke();
+
+
 
