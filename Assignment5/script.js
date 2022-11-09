@@ -28,7 +28,19 @@ ctx.closePath();
 ctx.fill();
 ctx.stroke();
 
-
+//pentagon
+ctx.fillStyle = "#ff00ff";
+ctx.strokeStyle = "#00ffff";
+ctx.lineWidth = "5";
+ctx.beginPath();
+ctx.moveTo(557, 305);
+ctx.moveTo(667, 284);
+ctx.moveTo(724, 379);
+ctx.moveTo(651, 464);
+ctx.moveTo(548, 420);
+ctx.closePath();
+ctx.fill();
+ctx.stroke();
 
 //line
 ctx.strokeStyle ="rgb(225,0,0)"
@@ -56,6 +68,4 @@ ctx.lineTo(602,553);
 ctx.closePath();
 ctx.fill();
 ctx.stroke();
-
-
 
