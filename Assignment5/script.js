@@ -23,7 +23,7 @@ ctx.fillStyle = "#fff00";
 ctx.strokeStyle = "red, wide";
 ctx.lineWidth = "5";
 ctx.beginPath();
-ctx.arc(385,440,50,0, (2 *Math.PI), false);
+ctx.arc(319,374,50,0, (2 *Math.PI), false);
 ctx.closePath();
 ctx.fill();
 ctx.stroke();
