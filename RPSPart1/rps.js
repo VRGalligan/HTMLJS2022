@@ -2,7 +2,7 @@
 //Array of words
 
 var canvas =  document.getElementById ("c");
-var ctx = canvas.getContextById ("2d")
+var ctx = canvas.getContext ("2d");
 var rps = ["Rock", "Paper", "Scissors"];
 rps[0] = `Rock` 
 rps[1] = `Paper`
