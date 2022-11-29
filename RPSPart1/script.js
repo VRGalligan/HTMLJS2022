@@ -3,7 +3,7 @@
 
 var canvas =  document.getElementById ("c");
 var ctx = canvas.getContextById ("2d")
-var rps = ["rock", "paper", "scissors"];
+var rps = ["Rock", "Paper", "Scissors"];
 rps[0] = `Rock` 
 rps[1] = `Paper`
 rps[2] = `Scissors`
@@ -26,6 +26,23 @@ btn[1].addEventListener(`click`, function(e){
 btn[2].addEventListener(`click`, function(e){
     play(2)
 })
+
+//alert("Select rock, paper, or scissors!");
+var rps = ["rock", "paper", "scissors"];
+//console.log(rps[0]);
+
+document.getElementById("rock").addEventListener('click', function (e) {
+    //alert("You picked " + rps[0]);
+    playGame(rps[0]);
+});
+document.getElementById("paper").addEventListener('click', function (e) {
+    //alert("You picked " + rps[1])
+    playGame(rps[1]);
+});
+document.getElementById("scissors").addEventListener('click', function (e) {
+    //alert("You picked " + rps[2])
+    playGame(rps[2]);
+});
 
 //Play function accepts an integer
 //generates an integer 0-2
