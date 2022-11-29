@@ -1,5 +1,7 @@
 //Array of words
 var rps = [];
+var canvas =  document.getElementById ("c");
+var ctx = 
 rps[0] = `Rock` 
 rps[1] = `Paper`
 rps[2] = `Scissors`
