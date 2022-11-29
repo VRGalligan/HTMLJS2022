@@ -11,8 +11,8 @@ nav{
 }
 #container{
     box-sizing:border-box;
-    width:1010px;
-    border:2px solid lightpink;
+    width:1080px;
+    border:5px solid lightpink;
     padding:7px;
 }
 canvas{
