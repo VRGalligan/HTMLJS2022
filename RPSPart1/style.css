@@ -3,7 +3,7 @@ body{
     justify-content:center;
     color: darkgreen;
     size: 15px;
-    font-family: fantasy;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 nav{
     display:flex;
@@ -12,7 +12,7 @@ nav{
 #container{
     box-sizing:border-box;
     width:1018px;
-    border:1px solid black;
+    border:5px solid darkolivegreen;
     padding:7px;
 }
 canvas{
@@ -21,7 +21,7 @@ canvas{
 }
 a:link, a:visited{
     display:inline-block;
-    background-color:yellow;
+    background-color:rgb(236, 138, 218);
     padding:10px;
     margin:20px;
 }
