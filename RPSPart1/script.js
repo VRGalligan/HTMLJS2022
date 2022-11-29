@@ -3,7 +3,7 @@
 
 var canvas =  document.getElementById ("c");
 var ctx = canvas.getContextById ("2d")
-var rps = [];
+var rps = ["rock", "paper", "scissors"];
 rps[0] = `Rock` 
 rps[1] = `Paper`
 rps[2] = `Scissors`
