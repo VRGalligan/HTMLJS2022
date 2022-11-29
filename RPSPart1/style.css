@@ -12,11 +12,11 @@ nav{
 #container{
     box-sizing:border-box;
     width:1018px;
-    border:5px solid darkolivegreen;
+    border:5px solid lightpink;
     padding:7px;
 }
 canvas{
-    border: 1px solid black;
+    border: 5px solid darkgrey;
     box-sizing:border-box;
 }
 a:link, a:visited{
