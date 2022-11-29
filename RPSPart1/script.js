@@ -1,3 +1,4 @@
+
 //Array of words
 
 var canvas =  document.getElementById ("c");
