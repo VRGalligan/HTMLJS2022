@@ -1,0 +1,33 @@
+body{
+    display:flex;
+    justify-content:center;
+    background-color: darkgray;
+    color: darkgreen;
+    size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#container{
+    box-sizing:border-box;
+    width:1055px;
+    border:5px solid darkred;
+    padding:7px;
+}
+nav{
+    display: flex;
+    justify-content:center;
+
+}
+
+
+canvas{
+    border: 5px solid rgb(70, 50, 50);
+    box-sizing:border-box;
+}
+
+
+a:link, a:visited{
+    display:inline-block;
+    background-color:rgb(105, 15, 23);
+    padding:10px;
+    margin:20px;
+}

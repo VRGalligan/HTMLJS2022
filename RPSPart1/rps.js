@@ -1,8 +1,10 @@
 
 //Array of words
 
-var canvas =  document.getElementById ("c");
-//var ctx = canvas.getContext ("2d");
+var canvas =  document.getElementById ("canvas");
+var ctx = canvas.getContext ("2d");
+
+
 var rps = ["Rock", "Paper", "Scissors"];
 rps[0] = `Rock` 
 rps[1] = `Paper`
@@ -27,22 +29,7 @@ btn[2].addEventListener(`click`, function(e){
     play(2)
 })
 
-//alert("Select rock, paper, or scissors!");
-//var rps = ["rock", "paper", "scissors"];
-//console.log(rps[0]);
 
-//document.getElementById("rock").addEventListener('click', function (e) {
-    //alert("You picked " + rps[0]);
-  //  playGame(rps[0]);
-//});
-//document.getElementById("paper").addEventListener('click', function (e) {
-    //alert("You picked " + rps[1])
-    //playGame(rps[1]);
-//});
-//document.getElementById("scissors").addEventListener('click', function (e) {
-    //alert("You picked " + rps[2])
-    //playGame(rps[2]);
-//});
 
 //Play function accepts an integer
 //generates an integer 0-2
