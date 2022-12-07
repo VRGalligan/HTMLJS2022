@@ -20,7 +20,7 @@ var frames = fps;
 
 //load game sprites
 var carSprite= new Image();
-carSprite.src = "images/lighteningSprite.png";
+carSprite.src = "images/turtle.png";
 
 carSprite.onload = function(){
     main();

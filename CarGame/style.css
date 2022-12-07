@@ -3,6 +3,6 @@ html,body{
     justify-content: center;
 }
 canvas{
-    border: 5px dotted darkred;
-    background-image: url(images/radiatorSprings.jpeg);
+    border: 5px dotted rgb(102, 174, 196);
+    background-image: url(images/underTheSea.jpeg);
 }
