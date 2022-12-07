@@ -4,5 +4,7 @@ html,body{
 }
 canvas{
     border: 5px dotted rgb(223, 203, 114);
-    background-image: url(images/wildwest.png);
+    background-image: url(images/desert.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
