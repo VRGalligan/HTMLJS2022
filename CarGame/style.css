@@ -1,0 +1,7 @@
+html,body{
+    display: flex;
+    justify-content: center;
+}
+canvas{
+    border: 5px dotted darkred;
+}
