@@ -7,7 +7,7 @@ var start = 58;
 var finish = 956;
 var carPos = 2;
 var speed = 3;
-var carWidth = 50;
+var carWidth = 60;
 
 var startFuel = randomNumber(canvas.width, 600);
 var fuel = startFuel;
