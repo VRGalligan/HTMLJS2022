@@ -3,8 +3,8 @@ var ctx = canvas.getContext("2d");
 
 var timer = requestAnimationFrame(main);
 
-var start = 50;
-var finish = 750;
+var start = 58;
+var finish = 956;
 var carPos = 2;
 var speed = 3;
 var carWidth = 50;
@@ -20,7 +20,7 @@ var frames = fps;
 
 //load game sprites
 var carSprite= new Image();
-carSprite.src = "images/herbie.png";
+carSprite.src = "images/blueCar.png";
 
 carSprite.onload = function(){
     main();
