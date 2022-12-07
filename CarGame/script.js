@@ -44,7 +44,7 @@ function main(){
     ctx.clearRect(0,0, canvas.width, canvas.height);
     if(gameOver){
         ctx.fillStyle = "black";
-        ctx.font = "30px Pentagon";
+        ctx.font = "30px Pentagon.ttf";
         ctx.textAlign = "center";
         ctx.fillText("Press Space to Start", canvas.width/2, canvas.height/2);
 
