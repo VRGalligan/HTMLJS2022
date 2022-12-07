@@ -3,8 +3,8 @@ var ctx = canvas.getContext("2d");
 
 var timer = requestAnimationFrame(main);
 
-var start = 50;
-var finish = 750;
+var start = 58;
+var finish = 956;
 var carPos = 2;
 var speed = 3;
 var carWidth = 50;
