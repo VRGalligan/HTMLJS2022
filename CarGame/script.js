@@ -5,7 +5,7 @@ var timer = requestAnimationFrame(main);
 
 var start = 58;
 var finish = 956;
-var carPos = 2;
+var carPos = 3;
 var speed = 3;
 var carWidth = 60;
 
@@ -20,7 +20,7 @@ var frames = fps;
 
 //load game sprites
 var carSprite= new Image();
-carSprite.src = "images/turtle.png";
+carSprite.src = "images/jessiebullseye.png";
 
 carSprite.onload = function(){
     main();
@@ -44,7 +44,7 @@ function main(){
     ctx.clearRect(0,0, canvas.width, canvas.height);
     if(gameOver){
         ctx.fillStyle = "black";
-        ctx.font = "30px Pentagon.ttf";
+        ctx.font = "50px Times New Roman";
         ctx.textAlign = "center";
         ctx.fillText("Press Space to Start", canvas.width/2, canvas.height/2);
 
@@ -90,17 +90,17 @@ function drawCar(){
      //draw a car
     // ctx.fillStyle = "red";
      //ctx.fillRect(carPos,canvas.height/2, carWidth, 20); 
-     ctx.drawImage(carSprite, carPos, canvas.height/2, carWidth, 20);
+     ctx.drawImage(carSprite, carPos, canvas.height/2, carWidth, 40);
 }
 
 function drawFuelBar(){
     var currentBarWidth = fuelBarWidth * (fuel/startFuel);
-    ctx.fillStyle = "black";
+    ctx.fillStyle = "white";
     ctx.fillRect(start, 30, fuelBarWidth, 10);
     ctx.font = "25px Arial";
     ctx.fillText("Fuel", start, 25);
     if(fuel > 0){
-        ctx.fillStyle = "green";
+        ctx.fillStyle = "brown";
         ctx.fillRect(start, 30, currentBarWidth, 10);
 
     }
