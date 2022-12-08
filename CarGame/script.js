@@ -112,7 +112,7 @@ function drawResults(){
         ctx.fillStyle = "black";
         ctx.font = "25px Garamond";
         ctx.textAlign = "center";
-        ctx.fillText("You made it to the finish...You Win!", canvas.width/2, canvas.height/2);
+        ctx.fillText("You made it to the finish...Yee-Haw!!", canvas.width/2, canvas.height/2);
     }else{
         ctx.fillStyle = "black";
         ctx.font = "25px Garamond";
