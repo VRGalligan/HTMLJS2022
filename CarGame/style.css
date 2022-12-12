@@ -2,6 +2,11 @@ html,body{
     display: flex;
     justify-content: center;
 }
+@font-face {
+    font-family: pentagon;
+    src: url(fonts/pentagon/Pentagon.ttf);
+   }
+
 canvas{
     border: 5px dotted rgb(223, 203, 114);
     background-image: url(images/desert.jpg);
