@@ -20,8 +20,8 @@ var shipPOS = 3;
 var shipSprite= new Image();
 shipSprite.src = "images/spaceship.png";
 
-var asteroidRock = new Image();
-asteroidRock = "images/rock.png"
+//var asteroidRock = new Image();
+//asteroidRock = "images/rock.png"
 
 //create keyboard event handlers
 document.addEventListener("keydown", pressKeyDown);
@@ -194,7 +194,7 @@ function Asteroid() {
         ctx.closePath();
         ctx.fill();
         ctx.restore();
-        ctx.drawImage(asteroidRock,this.x, this.y );
+        //ctx.drawImage(asteroidRock,this.x, this.y );
 
 
     }
