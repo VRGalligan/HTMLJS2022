@@ -23,6 +23,8 @@ shipSprite.src = "images/spaceship.png";
 //var asteroidRock = new Image();
 //asteroidRock = "images/rock.png"
 
+
+
 //create keyboard event handlers
 document.addEventListener("keydown", pressKeyDown);
 document.addEventListener("keyup", pressKeyUp);
