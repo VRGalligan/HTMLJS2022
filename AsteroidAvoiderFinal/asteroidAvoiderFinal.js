@@ -20,9 +20,18 @@ var shipPOS = 3;
 var shipSprite= new Image();
 shipSprite.src = "images/spaceship.png";
 
-//var asteroidRock = new Image();
-//asteroidRock = "images/rock.png"
+var asteroidRock = new Image();
+asteroidRock.src = "images/rock.png";
 
+var startScreen = new Image();
+startScreen.src = "images/startScreenStarWars.png";
+
+var endScreen = new Image();
+endScreen.src = "images/gameOverStarWars.png";
+
+startScreen.onload = function(){
+        main();
+}
 
 
 //create keyboard event handlers
@@ -186,17 +195,19 @@ function Asteroid() {
     this.y = randomRange(canvas.height - this.radius, this.radius) - canvas.height;
     this.vy = randomRange(10, 5);
     this.color = "white";
-
+    
+    
     //methods (functions) to draw asteroid
     this.drawAsteroid = function () {
         ctx.save();
-        ctx.beginPath();
-        ctx.fillStyle = this.color;
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, true);
-        ctx.closePath();
-        ctx.fill();
+        // ctx.beginPath();
+        // ctx.fillStyle = this.color;
+        // ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, true);
+        // ctx.closePath();
+        // ctx.fill();
+        ctx.drawImage(asteroidRock, this.x - this.radius, this.y-this.radius, this.radius *2, this.radius *2);
         ctx.restore();
-        //ctx.drawImage(asteroidRock,this.x, this.y );
+        
 
 
     }
@@ -312,13 +323,15 @@ function main() {
 gameState[0] = function(){
     //code for main menu
     ctx.save();
-    ctx.font = "30px Arial";
-    ctx.fillStyle = "white";
-    ctx.textAlign = "center";
-    ctx.fillText("Asteroid Avoider", canvas.width/2, canvas.height/2 - 30);
-    ctx.font = "15px Arial";
-    ctx.fillText("Press Space to Start", canvas.width/2, canvas.height/2 + 20);
-    ctx.restore();
+    ctx.drawImage(startScreen, 0,0,canvas.width,canvas.height);
+    //ctx.font = "30px Arial";
+    //ctx.fillStyle = "white";
+    //ctx.textAlign = "center";
+    //ctx.fillText("Asteroid Avoider", canvas.width/2, canvas.height/2 - 30);
+    //ctx.font = "15px Arial";
+    //ctx.fillText("Press Space to Start", canvas.width/2, canvas.height/2 + 20);
+   ctx.restore();
+    
 }
 
 //Play Game State
@@ -328,10 +341,11 @@ gameState[1] = function(){
     
     //draw score to screen
     ctx.save();
-    ctx.font = "15px Arial";
+   ctx.font = "15px Arial";
     ctx.fillStyle = "white";
     ctx.fillText(`Score: ${score}`, canvas.width -150, 30)
     ctx.restore();
+    //ctx.drawImage(endScreen, canvas.width -150, 30)
 
     //vertical movement
     if (ship.up) {
@@ -389,6 +403,7 @@ gameState[1] = function(){
 
 //Game Over State
 gameState[2] = function(){
+    ctx.drawImage(endScreen, 0,0,canvas.width,canvas.height);
     if(score > highScore){
         highScore = score;
 
@@ -397,12 +412,13 @@ gameState[2] = function(){
         ctx.font = "30px Arial";
         ctx.fillStyle = "white";
         ctx.textAlign = "center";
-        ctx.fillText("Game Over! Your Score Was: " + score.toString(), canvas.width/2, canvas.height/2 - 60);
+        ctx.fillText("Your Score Was: " + score.toString(), canvas.width/2, canvas.height/2 - 60);
         ctx.fillText("Your High Score is: " + highScore.toString(), canvas.width/2, canvas.height/2 - 30);
         ctx.fillText("New Record! ",  canvas.width/2, canvas.height/2);
-        ctx.font = "15px Arial";
-        ctx.fillText("Press Space to Play Again ", canvas.width/2, canvas.height/2 + 20);
+        //ctx.font = "15px Arial";
+       // ctx.fillText("Press Space to Play Again ", canvas.width/2, canvas.height/2 + 20);
         ctx.restore();
+        // ctx.drawImage (endScreen)
 
     }else{
          //code for game over menu
@@ -411,10 +427,11 @@ gameState[2] = function(){
         ctx.fillStyle = "white";
         ctx.textAlign = "center";
         ctx.fillText("Game Over! Your Score Was: " + score.toString(), canvas.width/2, canvas.height/2 - 60);
-        ctx.fillText("Your High Score is: " + highScore.toString(), canvas.width/2, canvas.height/2 - 30);
+       ctx.fillText("Your High Score is: " + highScore.toString(), canvas.width/2, canvas.height/2 - 30);
         ctx.font = "15px Arial";
-        ctx.fillText("Press Space to Play Again ", canvas.width/2, canvas.height/2 + 20);
+       // ctx.fillText("Press Space to Play Again ", canvas.width/2, canvas.height/2 + 20);
         ctx.restore();
+       
     }
    
 }
