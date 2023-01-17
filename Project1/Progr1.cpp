@@ -5,5 +5,5 @@ using namespace std;
 void main()
 {
     cout <<"Hello C++ World!";
-    system("pause")
+    system("pause");
 }
